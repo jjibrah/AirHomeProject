@@ -12,9 +12,9 @@
         android:layout_width="564dp"
         android:layout_height="882dp"
         android:scaleType="centerCrop"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main_image"
-        tools:layout_editor_absoluteX="-164dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/main_image" />
 
     <TextView
         android:id="@+id/mTvText"
@@ -36,7 +36,7 @@
         android:layout_marginStart="23dp"
         android:layout_marginEnd="23dp"
         android:layout_marginBottom="186dp"
-        android:text="welcome to AIR HOME"
+        android:text="Welcome to AIR HOME"
         android:textColor="#ffffff"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -76,7 +76,6 @@
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/mTvText"
         app:layout_constraintStart_toStartOf="@+id/mTvText"
-        app:layout_constraintTop_toBottomOf="@+id/mTvText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/mTvText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
