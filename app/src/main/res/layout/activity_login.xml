@@ -46,21 +46,25 @@
 
 
                 <EditText
+                    android:hint="Email"
                     android:paddingStart="15dp"
                     android:id="@+id/mEdtEmail"
                     android:background="@drawable/background_grey"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="40dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="10dp"
                     android:ems="10"
-                    android:hint="Enter Email"
-                    android:inputType="text"
-                    android:textSize="25dp" />
+                    android:textColorHint="#525357"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20dp" />
+
 
                 <EditText
+                    android:hint="Password"
                     android:paddingStart="15dp"
                     android:background="@drawable/background_grey"
                     android:id="@+id/mEdtPassword"
@@ -71,16 +75,17 @@
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="10dp"
                     android:ems="10"
-                    android:hint="Enter Password"
+                    android:textColorHint="#525357"
+                    android:textColor="@color/black"
                     android:inputType="textPassword"
-                    android:textSize="25dp" />
+                    android:textSize="20dp" />
 
                 <Button
                     android:layout_marginTop="30dp"
-                    android:id="@+id/mBtnLogin"
+                    android:id="@+id/mBtnLoginHome"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="110dp"
+                    android:layout_marginStart="120dp"
                     android:layout_marginBottom="20dp"
                     android:backgroundTint="#FF5722"
                     android:text="LOGIN" />

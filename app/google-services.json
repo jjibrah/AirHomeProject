@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217028544867",
+    "project_id": "final-project-db-ce39c",
+    "storage_bucket": "final-project-db-ce39c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217028544867:android:db8817f1ce910f8ba42b56",
+        "android_client_info": {
+          "package_name": "com.Abdifatah.airhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217028544867-t5v1ao8q97gungf33cvl253edjcatuci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs7hBwvBxDt8TBmjMB0bmwcU0YhCTtJko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217028544867-t5v1ao8q97gungf33cvl253edjcatuci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
