@@ -31,6 +31,7 @@ class SignupActivity : AppCompatActivity() {
                         if (it.isSuccessful){
                             var intent = Intent(this, LoginActivity::class.java)
                             startActivity(intent)
+                            Toast.makeText(this, "account created successfully !!!", Toast.LENGTH_SHORT).show()
                         }else{
                             Toast.makeText(this, "Passwords do not match !!!", Toast.LENGTH_SHORT).show()
                         }

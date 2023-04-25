@@ -29,6 +29,7 @@ class LoginActivity : AppCompatActivity() {
                     if (it.isSuccessful) {
                         var intent = Intent(this, HomeActivity::class.java)
                         startActivity(intent)
+                        finish()
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                     }
