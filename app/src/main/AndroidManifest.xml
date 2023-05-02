@@ -17,7 +17,7 @@
             android:exported="false"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.AirHome.NoActionBar" />
-        <activity
+           <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity
