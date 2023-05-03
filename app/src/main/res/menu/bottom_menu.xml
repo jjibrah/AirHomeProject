@@ -17,7 +17,7 @@
         app:showAsAction="ifRoom"
         android:icon="@drawable/baseline_help_outline_24"/>
     <item
-        android:id="@+id/logout"
+        android:id="@+id/mBtnLogout"
         android:title="Logout"
         app:showAsAction="ifRoom"
         android:icon="@drawable/baseline_logout_24"/>
