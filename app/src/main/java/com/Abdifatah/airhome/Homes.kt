@@ -1,3 +1,3 @@
 package com.Abdifatah.airhome
 
-data class Homes()
+data class Homes(var image:Int, var location:String,var price:String)

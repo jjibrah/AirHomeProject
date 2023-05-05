@@ -11,9 +11,9 @@
 
     <ImageView
         android:id="@+id/mHouse"
-        android:layout_width="0dp"
+        android:layout_width="250dp"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="15dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/imgLocation"
@@ -44,11 +44,11 @@
         app:layout_constraintStart_toEndOf="@+id/imgLocation" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/mPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginBottom="10dp"
         android:text="ksh 4,000"
         android:textColor="#033465"
         android:textSize="20dp"
