@@ -1,5 +1,6 @@
 package com.Abdifatah.airhome
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -37,5 +38,12 @@ class HomeActivity : AppCompatActivity() {
 
     homeAdapter = HomeAdapter(homeList)
     recyclerView.adapter = homeAdapter
+
+    homeAdapter.onItemClick = {
+      var intent = Intent(this,DetailActivity::class.java)
+      intent.putExtra("home", it)
+      startActivity(intent)
+    }
+
   }
 }

@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 class HomeAdapter (var homelist:ArrayList<Homes>)
     :RecyclerView.Adapter<HomeAdapter.HomeViewHolder>(){
 
+    var onItemClick : ((Homes) -> Unit)? = null
+
     class HomeViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         var mHouse : ImageView = itemView.findViewById(R.id.mHouse)
         var mLocation : TextView = itemView.findViewById(R.id.mTvLocation)
@@ -31,6 +33,10 @@ class HomeAdapter (var homelist:ArrayList<Homes>)
         holder.mHouse.setImageResource(home.image)
         holder.mLocation.text = home.location
         holder.mPrice.text = home.price
+
+        holder.itemView.setOnClickListener {
+            onItemClick?.invoke(home)
+        }
     }
 
 }
