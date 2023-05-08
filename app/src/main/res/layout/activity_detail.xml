@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/mImgHouse"
+        android:layout_width="396dp"
+        android:layout_height="254dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic1" />
+
+    <TextView
+        android:id="@+id/mTvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="17dp"
+        android:text="Mombasa"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/mTvDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mImgLocation"
+        app:layout_constraintTop_toBottomOf="@+id/mImgHouse" />
+
+    <TextView
+        android:id="@+id/mTvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="7dp"
+        android:background="#FEE4D5"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="111dp"
+        android:text="KSh 5400 \n night"
+        android:textAlignment="center"
+        android:textColor="#E64A19"
+        android:textSize="23dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTvDetails" />
+
+    <TextView
+        android:id="@+id/mTvDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="This is a 4 Bedroom self Contained featuring a private beach area and views of sea, The Sultan Palace Beach Retreat Mombasa is a sustainable apartment set in Mombasa, 300 m from Ngoloko Kikambala Beach. This beachfront property offers access to free WiFi and free private parking.Certain units in the apartment complex have private entrance and are equipped with desk and wardrobe. Some units come with air conditioning, a flat-screen TV, washing machine and a coffee machine, as well as a fully equipped kitchen. At the apartment complex, the units are fitted with a private bathroom."
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/mTvPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTvLocation" />
+
+    <ImageView
+        android:id="@+id/mImgLocation"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/mTvDetails"
+        app:layout_constraintEnd_toStartOf="@+id/mTvLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mImgHouse"
+        app:srcCompat="@drawable/house_location_24" />
+
+    <Button
+        android:id="@+id/mBtnBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="35dp"
+        android:text="BOOK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTvDetails" />
+</androidx.constraintlayout.widget.ConstraintLayout>
