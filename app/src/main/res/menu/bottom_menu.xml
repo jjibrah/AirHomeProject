@@ -12,10 +12,10 @@
         app:showAsAction="ifRoom"
         android:icon="@drawable/baseline_home_24"/>
     <item
-        android:id="@+id/help"
-        android:title="Help"
+        android:id="@+id/notification"
+        android:title="notification"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/baseline_help_outline_24"/>
+        android:icon="@drawable/ic_notifications_black_24dp"/>
     <item
         android:id="@+id/mBtnLogout"
         android:title="Logout"
