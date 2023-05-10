@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Air Home</string>
+    <string name="image">insert image</string>
     <string name="title_activity_home">Air Home Kenya</string>
 </resources>
