@@ -7,7 +7,7 @@
     tools:context=".DetailActivity">
 
     <ImageView
-        android:id="@+id/mImgHouse"
+        android:id="@+id/mHouse"
         android:layout_width="396dp"
         android:layout_height="254dp"
         android:scaleType="fitXY"
@@ -29,10 +29,10 @@
         app:layout_constraintBottom_toTopOf="@+id/mTvDetails"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/mImgLocation"
-        app:layout_constraintTop_toBottomOf="@+id/mImgHouse" />
+        app:layout_constraintTop_toBottomOf="@+id/mHouse" />
 
     <TextView
-        android:id="@+id/mTvPrice"
+        android:id="@+id/mPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -60,7 +60,7 @@
         android:textAlignment="center"
         android:textSize="18dp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/mTvPrice"
+        app:layout_constraintBottom_toTopOf="@+id/mPrice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mTvLocation" />
@@ -75,7 +75,7 @@
         app:layout_constraintBottom_toTopOf="@+id/mTvDetails"
         app:layout_constraintEnd_toStartOf="@+id/mTvLocation"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mImgHouse"
+        app:layout_constraintTop_toBottomOf="@+id/mHouse"
         app:srcCompat="@drawable/house_location_24" />
 
     <Button
