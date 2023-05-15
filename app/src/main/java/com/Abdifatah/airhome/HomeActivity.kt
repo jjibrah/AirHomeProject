@@ -32,11 +32,6 @@ class HomeActivity : AppCompatActivity() {
 
     homeList = ArrayList()
 
-    homeList.add(Homes(R.drawable.pic1, "Mombasa", "4000"))
-    homeList.add(Homes(R.drawable.pic2, "Kisumu", "3800"))
-    homeList.add(Homes(R.drawable.pic_new_1, "Malindi", "5000"))
-    homeList.add(Homes(R.drawable.pic_new_2, "Watamu", "4500"))
-
     homeAdapter = HomeAdapter(homeList)
     recyclerView.adapter = homeAdapter
 
@@ -52,7 +47,7 @@ class HomeActivity : AppCompatActivity() {
     }
     mAuth = FirebaseAuth.getInstance()
     bottomNavigationView = findViewById(R.id.bottomAppBar)
-    bottomNavigationView.setOnItemReselectedListener {
+    bottomNavigationView.setOnItemSelectedListener {
       when(it.itemId){
         R.id.menuAccount -> {
           val go = Intent(this, ProfileActivity::class.java)

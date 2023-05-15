@@ -22,7 +22,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="639dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/background_white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
+        android:onClick="mImage"
         android:id="@+id/mAddImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -72,6 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"
         android:text="POST"
+        android:onClick="mPost"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

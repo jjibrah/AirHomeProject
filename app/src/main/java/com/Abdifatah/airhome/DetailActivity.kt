@@ -15,8 +15,8 @@ class DetailActivity : AppCompatActivity() {
         if(homes != null){
             var location : TextView = findViewById(R.id.mTvLocation)
             var locationlogo : ImageView = findViewById(R.id.mImgLocation)
-            var houseprice : TextView = findViewById(R.id.mTvPrice)
-            var houseimage : ImageView = findViewById(R.id.mImgHouse)
+            var houseprice : TextView = findViewById(R.id.mEdtPrice)
+            var houseimage : ImageView = findViewById(R.id.mHouse)
 
             location.text = homes.location
             locationlogo.setImageResource(R.drawable.house_location_24)

@@ -12,6 +12,7 @@ data class Homes(var image:Int, var location:String, var details:String ,var pri
     ) {
     }
 
+
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(image)
         parcel.writeString(location)
