@@ -79,14 +79,14 @@
         app:srcCompat="@drawable/house_location_24" />
 
     <Button
-        android:id="@+id/mBtnBook"
+        android:id="@+id/mBtnContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
         android:layout_marginTop="98dp"
         android:layout_marginEnd="153dp"
         android:layout_marginBottom="34dp"
-        android:text="BOOK"
+        android:text="CONTACT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

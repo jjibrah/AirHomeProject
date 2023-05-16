@@ -7,6 +7,7 @@ import android.widget.ImageButton
 import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView.ItemView
+import com.google.android.gms.ads.mediation.Adapter
 import java.text.FieldPosition
 
 class MyAdapter(var homeList :ArrayList<houseDs>) :ListView.Adapter<MyAdapter.MyViewHolder> {

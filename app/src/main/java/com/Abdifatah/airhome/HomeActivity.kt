@@ -80,10 +80,7 @@ class HomeActivity : AppCompatActivity() {
     bottomNavigationView = findViewById(R.id.bottomAppBar)
     bottomNavigationView.setOnItemSelectedListener {
       when(it.itemId){
-        R.id.menuAccount -> {
-          val go = Intent(this, ProfileActivity::class.java)
-          startActivity(go)
-        }
+
 
           R.id.menuHome -> {
           val intent = Intent(this,HomeActivity::class.java)
