@@ -91,17 +91,6 @@
                     android:text="LOGIN" />
 
                 <TextView
-                    android:id="@+id/mTvForgotPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="30dp"
-                    android:text="Forgot Password?"
-                    android:textAlignment="center"
-                    android:textColor="#0C62B8"
-                    android:textSize="20dp" />
-
-                <TextView
                     android:id="@+id/mTvSignUp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -1,11 +1,10 @@
 package com.Abdifatah.airhome
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.Abdifatah.airhome.databinding.ActivitySignupBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -14,11 +13,16 @@ class SignupActivity : AppCompatActivity() {
     //Initiate the variables.
     lateinit var binding: ActivitySignupBinding
     lateinit var firebaseAuth: FirebaseAuth
+    lateinit var mlogin: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        mlogin = findViewById(R.id.mTvLog)
+        mlogin.setOnClickListener {
+            var intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+        }
         //Get Instance for the firebase authentication.
         firebaseAuth=FirebaseAuth.getInstance()
 

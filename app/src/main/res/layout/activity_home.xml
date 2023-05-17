@@ -12,9 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scrollView4"
+        app:layout_constraintTop_toTopOf="@+id/scrollView4"
         app:srcCompat="@drawable/top_background" />
 
     <ScrollView
@@ -33,47 +32,48 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="99dp">
+                android:layout_height="99dp"
+                app:layout_constraintBottom_toTopOf="@+id/housesTv"
+                app:layout_constraintTop_toTopOf="@+id/housesTv">
 
                 <TextView
                     android:id="@+id/welcome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="29dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="229dp"
-                    android:layout_marginBottom="19dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="16dp"
                     android:text="Welcome, "
                     android:textSize="30dp"
                     android:textStyle="italic"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/housesTv"
+                    android:layout_width="184dp"
+                    android:layout_height="50dp"
+                    android:paddingStart="30dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="See AirBnB"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/welcome"
+                    app:layout_constraintStart_toEndOf="@+id/welcome"
                     tools:ignore="MissingConstraints" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/housesTv"
+            <WebView
+                android:id="@+id/mWebView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="30dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:text="See House"
-                android:textSize="18dp"
-                android:textStyle="bold" />
+                android:layout_height="660dp"
+                android:layout_marginTop="-15dp"
+                tools:ignore="WebViewLayout" />
 
-            <ListView
-                android:id="@+id/houses"
-                android:layout_width="match_parent"
-                android:layout_height="638dp"
-                android:clipToPadding="false"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                tools:listitem="@layout/viewholder_houses" />
 
         </LinearLayout>
     </ScrollView>
@@ -95,19 +95,6 @@
             android:allowClickWhenDisabled="true"
             android:background="@color/brown"
             app:menu="@menu/bottom_menu" />
-
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/add_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/maroon"
-            android:contentDescription="TODO"
-            android:src="@drawable/baseline_add_circle_outline_24"
-            app:layout_anchor="@id/bottomAppBar"
-            app:layout_anchorGravity="center|top"
-            app:maxImageSize="50dp" />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

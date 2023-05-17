@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         //if the user is already logged in just let them pass to the home page to view the homes available
         mAuth = FirebaseAuth.getInstance()
         if (mAuth.currentUser != null){
-            startActivity(Intent(this,HomeActivity::class.java))
+            var intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
         }
         btnlogin.setOnClickListener {
             var intent = Intent(this, LoginActivity::class.java)
