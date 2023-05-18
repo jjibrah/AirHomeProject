@@ -30,47 +30,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="99dp"
-                app:layout_constraintBottom_toTopOf="@+id/housesTv"
-                app:layout_constraintTop_toTopOf="@+id/housesTv">
-
-                <TextView
-                    android:id="@+id/welcome"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="7dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Welcome, "
-                    android:textSize="30dp"
-                    android:textStyle="italic"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/housesTv"
-                    android:layout_width="184dp"
-                    android:layout_height="50dp"
-                    android:paddingStart="30dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:text="See AirBnB"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/welcome"
-                    app:layout_constraintStart_toEndOf="@+id/welcome"
-                    tools:ignore="MissingConstraints" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
             <WebView
                 android:id="@+id/mWebView"
                 android:layout_width="match_parent"
-                android:layout_height="660dp"
+                android:layout_height="6600dp"
                 android:layout_marginTop="-15dp"
                 tools:ignore="WebViewLayout" />
 

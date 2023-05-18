@@ -54,7 +54,7 @@ class HomeActivity : AppCompatActivity() {
     mWeb.webViewClient = WebViewClient()
 
     mWeb.apply {
-      loadUrl("www.booking.com")
+      loadUrl("www.expedia.com")
       settings.javaScriptEnabled = true
       settings.safeBrowsingEnabled = true
 
